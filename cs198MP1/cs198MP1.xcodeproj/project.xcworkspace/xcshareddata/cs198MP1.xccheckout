@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>51FAA4EE-7873-4FC5-BB11-6695A831F358</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cs198MP1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F1FFA8C3641002C2D0744BE2316C11B9F855BDC</key>
+		<string>https://github.com/sliu19/stanfordCS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cs198MP1/cs198MP1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F1FFA8C3641002C2D0744BE2316C11B9F855BDC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sliu19/stanfordCS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F1FFA8C3641002C2D0744BE2316C11B9F855BDC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F1FFA8C3641002C2D0744BE2316C11B9F855BDC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>stanfordCS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
