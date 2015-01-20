@@ -15,6 +15,8 @@
 		F718BCE51A6DCA9E001C3E1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F718BCE41A6DCA9E001C3E1D /* Images.xcassets */; };
 		F718BCE81A6DCA9E001C3E1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F718BCE61A6DCA9E001C3E1D /* LaunchScreen.xib */; };
 		F718BCF41A6DCA9E001C3E1D /* cs198MP1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BCF31A6DCA9E001C3E1D /* cs198MP1Tests.m */; };
+		F718BCFE1A6DCC13001C3E1D /* card.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BCFD1A6DCC13001C3E1D /* card.m */; };
+		F718BD031A6DCF23001C3E1D /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BD021A6DCF23001C3E1D /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		F718BCED1A6DCA9E001C3E1D /* cs198MP1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cs198MP1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F718BCF21A6DCA9E001C3E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F718BCF31A6DCA9E001C3E1D /* cs198MP1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cs198MP1Tests.m; sourceTree = "<group>"; };
+		F718BCFD1A6DCC13001C3E1D /* card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = card.m; sourceTree = "<group>"; };
+		F718BCFF1A6DCC2D001C3E1D /* card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = card.h; sourceTree = "<group>"; };
+		F718BD011A6DCF07001C3E1D /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		F718BD021A6DCF23001C3E1D /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +89,8 @@
 		F718BCD31A6DCA9E001C3E1D /* cs198MP1 */ = {
 			isa = PBXGroup;
 			children = (
-				F718BCD81A6DCA9E001C3E1D /* AppDelegate.h */,
-				F718BCD91A6DCA9E001C3E1D /* AppDelegate.m */,
 				F718BCDE1A6DCA9E001C3E1D /* ViewController.h */,
+				F718BD001A6DCC37001C3E1D /* Model */,
 				F718BCDF1A6DCA9E001C3E1D /* ViewController.m */,
 				F718BCE11A6DCA9E001C3E1D /* Main.storyboard */,
 				F718BCE41A6DCA9E001C3E1D /* Images.xcassets */,
@@ -99,6 +104,8 @@
 		F718BCD41A6DCA9E001C3E1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F718BCD91A6DCA9E001C3E1D /* AppDelegate.m */,
+				F718BCD81A6DCA9E001C3E1D /* AppDelegate.h */,
 				F718BCD51A6DCA9E001C3E1D /* Info.plist */,
 				F718BCD61A6DCA9E001C3E1D /* main.m */,
 			);
@@ -120,6 +127,17 @@
 				F718BCF21A6DCA9E001C3E1D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F718BD001A6DCC37001C3E1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F718BCFF1A6DCC2D001C3E1D /* card.h */,
+				F718BCFD1A6DCC13001C3E1D /* card.m */,
+				F718BD011A6DCF07001C3E1D /* Deck.h */,
+				F718BD021A6DCF23001C3E1D /* Deck.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F718BCFE1A6DCC13001C3E1D /* card.m in Sources */,
 				F718BCDA1A6DCA9E001C3E1D /* AppDelegate.m in Sources */,
 				F718BCD71A6DCA9E001C3E1D /* main.m in Sources */,
 				F718BCE01A6DCA9E001C3E1D /* ViewController.m in Sources */,
+				F718BD031A6DCF23001C3E1D /* Deck.m in Sources */,
 				F718BCDD1A6DCA9E001C3E1D /* cs198MP1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
