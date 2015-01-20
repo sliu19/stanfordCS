@@ -17,10 +17,18 @@
 -(NSMutableArray *)cards
 {
     if(!_cards){
-        NSArray *rankStrings = @[@"?",@"A",@"2",@"3",@"4",@"10",@"J",@"Q",@"K"];
-        NSArray *suit = @[@"♠︎",@"♥︎",@"♣︎",@"♦︎"];
         _cards=[[NSMutableArray alloc] init];
-
+        NSArray *rankStrings = @[@"?",@"A",@"2",@"3",@"4",@"10",@"J",@"Q",@"K"];
+        NSArray *validSuits = @[@"♠︎",@"♥︎",@"♣︎",@"♦︎"];
+        for (NSString *ranks in rankStrings) {
+            for(NSString *suits in validSuits){
+                card *newCard;
+                newCard.rank = ranks;
+                newCard.suits = suits;
+                [self.cards addObject:newCard];
+            }
+        }
+        
     }
     return _cards;
 }
@@ -32,7 +40,6 @@
         unsigned index = arc4random() % [self.cards count];
         randomCard = self.cards[index];
     }
-    
     return randomCard;
 }
 

@@ -14,7 +14,7 @@
 @interface card: NSObject
 
 @property(strong,nonatomic) NSString *suits;
-@property(nonatomic) NSInteger rank;
+@property(strong,nonatomic) NSString *rank;
 
 
 @end

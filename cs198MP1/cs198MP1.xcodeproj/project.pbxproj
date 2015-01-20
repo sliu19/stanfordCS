@@ -89,9 +89,9 @@
 		F718BCD31A6DCA9E001C3E1D /* cs198MP1 */ = {
 			isa = PBXGroup;
 			children = (
+				F718BCDF1A6DCA9E001C3E1D /* ViewController.m */,
 				F718BCDE1A6DCA9E001C3E1D /* ViewController.h */,
 				F718BD001A6DCC37001C3E1D /* Model */,
-				F718BCDF1A6DCA9E001C3E1D /* ViewController.m */,
 				F718BCE11A6DCA9E001C3E1D /* Main.storyboard */,
 				F718BCE41A6DCA9E001C3E1D /* Images.xcassets */,
 				F718BCE61A6DCA9E001C3E1D /* LaunchScreen.xib */,
