@@ -9,3 +9,15 @@
 #import "card.h"
 @interface card()
 @end
+
+@implementation card
+
+-(card *)setCard:(NSString *)suits :(NSString *)ranks
+{
+    self.suits = suits;
+    self.rank = ranks;
+    return self;
+}
+
+
+@end

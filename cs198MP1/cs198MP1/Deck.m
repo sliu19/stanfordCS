@@ -18,11 +18,11 @@
 {
     if(!_cards){
         _cards=[[NSMutableArray alloc] init];
-        NSArray *rankStrings = @[@"?",@"A",@"2",@"3",@"4",@"10",@"J",@"Q",@"K"];
+        NSArray *rankStrings = @[@"?",@"A",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
         NSArray *validSuits = @[@"♠︎",@"♥︎",@"♣︎",@"♦︎"];
         for (NSString *ranks in rankStrings) {
             for(NSString *suits in validSuits){
-                card *newCard;
+                card *newCard = [[card alloc]init];
                 newCard.rank = ranks;
                 newCard.suits = suits;
                 [self.cards addObject:newCard];
@@ -35,11 +35,15 @@
 
 - (card *)drawRandomCard
 {
-    card *randomCard = nil;
+    printf("inRandom");
+    card *randomCard;
     if ([self.cards count]){
+        printf("count %lu",(unsigned long)[self.cards count]);
         unsigned index = arc4random() % [self.cards count];
         randomCard = self.cards[index];
     }
+    NSLog(@"currentCard %@",randomCard.suits);
+
     return randomCard;
 }
 

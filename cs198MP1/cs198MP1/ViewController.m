@@ -30,12 +30,14 @@
     {
         UIImage *cardImage = [UIImage imageNamed:@"cardfront"];
         [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
-        card *myCard = [_myDeck drawRandomCard];
-        NSString *myTitle = [myCard.rank stringByAppendingString:myCard.suits];
+        Deck *thisDeck = [[Deck alloc] init];
+        card *myCard = thisDeck.drawRandomCard;
+        NSString *myTitle = [myCard.suits stringByAppendingString:myCard.rank];
+        NSLog(@"currentTitle %@",myTitle);
         [sender setTitle:myTitle forState:UIControlStateNormal];
     }
     else {
-        UIImage *cardImage = [UIImage imageNamed:@"cardback"];
+        UIImage *cardImage = [UIImage imageNamed:@"cardBack"];
         [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];
     }

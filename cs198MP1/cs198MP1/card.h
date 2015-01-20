@@ -16,6 +16,6 @@
 @property(strong,nonatomic) NSString *suits;
 @property(strong,nonatomic) NSString *rank;
 
-
+-(card *)setCard:(NSString *)suits :(NSString *)ranks;
 @end
 #endif
